@@ -61,7 +61,7 @@ $this->load-model('model_user');
 if($this->model_user->is_login_in()){
 $data=array(
 'username'=>'$this->post->username'.
-'is+logged_in'=> 1
+'is_logged_in'=> 1
 );
 return true;
 }else{
