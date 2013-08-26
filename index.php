@@ -57,7 +57,7 @@ redirect(login/restricted);
 }
 }
 function valid_credential(){
-$this->load-model('model_user');
+$this->load->model('model_user');
 if($this->model_user->is_login_in()){
 $data=array(
 'username'=>'$this->post->username'.
